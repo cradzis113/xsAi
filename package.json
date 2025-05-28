@@ -1,0 +1,19 @@
+{
+  "name": "taixiu-predictor",
+  "version": "1.0.0",
+  "description": "Dự đoán Tài Xỉu sử dụng TensorFlow.js và Machine Learning",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "train": "node train_model.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "csv-parser": "^3.2.0"
+  }
+}

@@ -3,541 +3,451 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const path = require('path');
 
-// Thêm function để log với timestamp
 function logWithTime(message) {
     const timestamp = new Date().toISOString();
     console.log(`[${timestamp}] ${message}`);
 }
 
-// Constants for model configuration
 const CONFIG = {
-    SEQUENCE_LENGTH: 15,          // Tăng sequence length
-    LOOKBACK_WINDOW: 30,         // Tăng window size
-    BATCH_SIZE: 64,              // Tăng batch size
-    EPOCHS: 150,                 // Tăng số epochs
-    LEARNING_RATE: 0.001,        // Tăng learning rate ban đầu
+    SEQUENCE_LENGTH: 5,
+    LOOKBACK_WINDOW: 15,        // Giảm window size
+    BATCH_SIZE: 32,            // Giảm batch size
+    EPOCHS: 30,                // Giảm epochs
+    LEARNING_RATE: 0.001,      // Giảm learning rate
     VALIDATION_SPLIT: 0.2,
-    MIN_DELTA: 0.0001,           // Early stopping delta
-    PATIENCE: 15                 // Early stopping patience
+    ENSEMBLE_SIZE: 3,          // Tăng số lượng models
+    L2_REGULARIZATION: 0.005,  // Giảm regularization
+    CLASS_WEIGHT: {            // Thêm class weights
+        0: 1.0,               // Xỉu
+        1: 1.0                // Tài (sẽ được tính động)
+    }
 };
 
-// Function để kiểm tra file tồn tại
-function checkFileExists(filePath) {
-    try {
-        logWithTime(`Kiểm tra file ${filePath}...`);
-        return fs.existsSync(filePath);
-    } catch(err) {
-        logWithTime(`Lỗi khi kiểm tra file ${filePath}: ${err.message}`);
-        return false;
-    }
-}
-
-// Function để đảm bảo thư mục tồn tại
-function ensureDirectoryExists(dirPath) {
-    if (!fs.existsSync(dirPath)) {
-        logWithTime(`Tạo thư mục ${dirPath}...`);
-        fs.mkdirSync(dirPath, { recursive: true });
-    }
-}
-
-// Function để tính streak
-function calculateStreak(arr, index) {
-    let streak = 1;
-    const currentValue = arr[index].value;
+function calculateFeatures(data, index) {
+    const window = CONFIG.LOOKBACK_WINDOW;
+    const sequence = data.slice(Math.max(0, index - window), index + 1);
     
-    // Đếm ngược từ vị trí hiện tại
-    for(let i = index - 1; i >= 0; i--) {
-        if(arr[i].value === currentValue) {
-            streak++;
+    // Basic stats
+    const taiCount = sequence.filter(x => x.value === 1).length;
+    const taiRatio = taiCount / sequence.length;
+    
+    // Streak analysis
+    let currentStreak = 1;
+    let maxStreak = 1;
+    let streakValue = data[index-1].value;
+    
+    for(let i = index - 2; i >= Math.max(0, index - 10); i--) {
+        if(data[i].value === streakValue) {
+            currentStreak++;
+            maxStreak = Math.max(maxStreak, currentStreak);
         } else {
             break;
         }
     }
-    return streak;
-}
-
-// Function để tính moving average
-function calculateMovingAverage(arr, index, window) {
-    const start = Math.max(0, index - window + 1);
-    const sequence = arr.slice(start, index + 1);
-    const sum = sequence.reduce((acc, curr) => acc + curr.value, 0);
-    return sum / sequence.length;
-}
-
-// Function để tính volatility (độ biến động)
-function calculateVolatility(arr, index, window) {
-    const start = Math.max(0, index - window + 1);
-    const sequence = arr.slice(start, index + 1);
-    const values = sequence.map(item => item.value);
-    const mean = values.reduce((a, b) => a + b) / values.length;
-    const squaredDiffs = values.map(x => Math.pow(x - mean, 2));
-    return Math.sqrt(squaredDiffs.reduce((a, b) => a + b) / values.length);
-}
-
-// Function để tính tỷ lệ trong N lượt gần nhất
-function calculateRatio(arr, index, window = CONFIG.LOOKBACK_WINDOW) {
-    const start = Math.max(0, index - window + 1);
-    const sequence = arr.slice(start, index + 1);
-    const taiCount = sequence.filter(item => item.value === 1).length;
-    return taiCount / sequence.length;
-}
-
-// Function để chuyển thời gian thành features
-function timeToFeatures(timeStr) {
-    const [hour, minute] = timeStr.split(':').map(Number);
     
-    // Thêm các features thời gian mới
-    const timeOfDay = hour / 24; // Normalized hour (0-1)
-    const partOfHour = minute / 60; // Normalized minute (0-1)
-    const isRushHour = (hour >= 9 && hour <= 11) || (hour >= 13 && hour <= 15) ? 1 : 0;
-    const sinTime = Math.sin(2 * Math.PI * hour / 24); // Cyclical time feature
-    const cosTime = Math.cos(2 * Math.PI * hour / 24); // Cyclical time feature
+    // Time features
+    const [hour, minute] = data[index].time.split(':').map(Number);
+    const timeOfDay = hour / 24;
+    const partOfHour = minute / 60;
     
-    return [timeOfDay, partOfHour, isRushHour, sinTime, cosTime];
+    // Pattern analysis
+    const pattern = sequence.slice(-5).map(x => x.value);
+    const patternString = pattern.join('');
+    const alternationCount = pattern.slice(1).reduce((count, curr, i) => 
+        count + (curr !== pattern[i] ? 1 : 0), 0);
+    
+    // Momentum and trend
+    const shortTerm = sequence.slice(-5).filter(x => x.value === 1).length / 5;
+    const mediumTerm = sequence.slice(-10).filter(x => x.value === 1).length / 10;
+    const momentum = shortTerm - mediumTerm;
+    
+    // Volatility
+    const changes = sequence.slice(1).map((x, i) => 
+        x.value !== sequence[i].value ? 1 : 0
+    );
+    const volatility = changes.reduce((a, b) => a + b, 0) / changes.length;
+    
+    return [
+        taiRatio,                    // Overall ratio
+        currentStreak / 10,          // Current streak (normalized)
+        maxStreak / 10,              // Max streak (normalized)
+        timeOfDay,                   // Time of day
+        partOfHour,                  // Part of hour
+        Math.sin(2 * Math.PI * hour / 24),  // Cyclical time
+        Math.cos(2 * Math.PI * hour / 24),  // Cyclical time
+        alternationCount / 4,        // Pattern alternation
+        momentum,                    // Short-term momentum
+        volatility,                  // Volatility
+        shortTerm,                   // Short-term ratio
+        mediumTerm                   // Medium-term ratio
+    ];
 }
 
-// Function để convert log file sang CSV
-function convertLogToCSV() {
-    console.log('Đang chuyển đổi log file sang CSV...');
-    const logContent = fs.readFileSync('prediction_log.txt', 'utf8');
-    const lines = logContent.split('\n');
-
-    // Prepare CSV data
-    let csvContent = 'timestamp,tai_xiu\n';
-
-    // Process each line
-    lines.forEach(line => {
-        if (line.trim() === '') return;
-        
-        // Extract timestamp
-        const timestamp = line.match(/\[(.*?)\]/)?.[1]?.split(' ')?.[0];
-        
-        // Extract actual number and convert to Tai/Xiu
-        const actualMatch = line.match(/So thuc te: (\d+) \((Tai|Xiu)\)/);
-        if (actualMatch && timestamp) {
-            const number = parseInt(actualMatch[1]);
-            const taiXiuValue = number >= 5 ? 1 : 0;
-            csvContent += `${timestamp},${taiXiuValue}\n`;
-        }
-    });
-
-    // Write to CSV file
-    fs.writeFileSync('tai_xiu_data.csv', csvContent);
-    console.log('Đã tạo file tai_xiu_data.csv thành công');
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
 async function prepareData() {
-    const data = [];
-    let rowCount = 0;
-    
-    logWithTime('Bắt đầu đọc dữ liệu từ CSV...');
-    
-    // Đọc file CSV
+    // Read data
+    const rawData = [];
     await new Promise((resolve) => {
         fs.createReadStream('tai_xiu_data.csv')
             .pipe(csv())
             .on('data', (row) => {
-                data.push({
+                rawData.push({
                     time: row.timestamp,
                     value: parseInt(row.tai_xiu)
                 });
-                rowCount++;
-                if (rowCount % 1000 === 0) {
-                    logWithTime(`Đã đọc ${rowCount} dòng dữ liệu...`);
-                }
             })
-            .on('end', () => {
-                logWithTime(`Hoàn thành đọc ${rowCount} dòng dữ liệu`);
-                resolve();
-            });
+            .on('end', resolve);
     });
 
-    // Tạo features và sequences
-    const sequences = [];
+    // Calculate class distribution
+    const totalSamples = rawData.length;
+    const taiSamples = rawData.filter(x => x.value === 1).length;
+    const xiuSamples = totalSamples - taiSamples;
+    
+    logWithTime(`Class distribution - Tài: ${taiSamples}, Xỉu: ${xiuSamples}`);
+
+    // Create features
+    const features = [];
     const labels = [];
     
-    for (let i = CONFIG.LOOKBACK_WINDOW; i < data.length - CONFIG.SEQUENCE_LENGTH; i++) {
-        const sequence = [];
-        
-        // Thêm features cho mỗi timestep trong sequence
-        for(let j = 0; j < CONFIG.SEQUENCE_LENGTH; j++) {
-            const idx = i - CONFIG.SEQUENCE_LENGTH + j;
-            const timeFeatures = timeToFeatures(data[idx].time);
-            const streak = calculateStreak(data, idx);
-            const ratio = calculateRatio(data, idx);
-            const ma5 = calculateMovingAverage(data, idx, 5);
-            const ma10 = calculateMovingAverage(data, idx, 10);
-            const ma20 = calculateMovingAverage(data, idx, 20);
-            const volatility = calculateVolatility(data, idx, 10);
-            
-            // Gộp tất cả features
-            sequence.push([
-                data[idx].value,          // Giá trị Tài/Xỉu
-                ...timeFeatures,          // 5 time features
-                streak / 10,              // Streak (normalized)
-                ratio,                    // Tỷ lệ Tài
-                ma5,                      // Moving average 5
-                ma10,                     // Moving average 10
-                ma20,                     // Moving average 20
-                volatility               // Volatility
-            ]);
-        }
-        
-        sequences.push(sequence);
-        labels.push(data[i].value);
+    for(let i = CONFIG.LOOKBACK_WINDOW; i < rawData.length; i++) {
+        features.push(calculateFeatures(rawData, i));
+        labels.push(rawData[i].value);
     }
 
-    // Chuyển đổi thành tensors
-    const xs = tf.tensor3d(sequences);
-    const ys = tf.tensor1d(labels);
+    // Balance dataset by undersampling majority class
+    const taiIndices = [];
+    const xiuIndices = [];
+    
+    for(let i = 0; i < labels.length; i++) {
+        if(labels[i] === 1) {
+            taiIndices.push(i);
+        } else {
+            xiuIndices.push(i);
+        }
+    }
+    
+    const minCount = Math.min(taiIndices.length, xiuIndices.length);
+    
+    // Randomly sample from both classes
+    const selectedTaiIndices = shuffleArray([...taiIndices]).slice(0, minCount);
+    const selectedXiuIndices = shuffleArray([...xiuIndices]).slice(0, minCount);
+    
+    // Combine and shuffle
+    const balancedIndices = shuffleArray([...selectedTaiIndices, ...selectedXiuIndices]);
+    
+    // Create balanced dataset
+    const balancedFeatures = balancedIndices.map(i => features[i]);
+    const balancedLabels = balancedIndices.map(i => labels[i]);
+    
+    logWithTime(`Balanced dataset size: ${balancedFeatures.length} samples (${minCount} per class)`);
+
+    // Split data
+    const splitIndex = Math.floor(balancedFeatures.length * (1 - CONFIG.VALIDATION_SPLIT));
+    
+    const trainFeatures = balancedFeatures.slice(0, splitIndex);
+    const trainLabels = balancedLabels.slice(0, splitIndex);
+    const valFeatures = balancedFeatures.slice(splitIndex);
+    const valLabels = balancedLabels.slice(splitIndex);
 
     return {
-        inputs: xs,
-        outputs: ys,
-        totalSamples: sequences.length
+        train: {
+            features: trainFeatures,
+            labels: trainLabels
+        },
+        validation: {
+            features: valFeatures,
+            labels: valLabels
+        },
+        inputShape: [features[0].length]
     };
 }
 
-async function createAndTrainModel(data) {
-    logWithTime('Bắt đầu tạo model...');
-    
-    // Tạo model với kiến trúc phức tạp hơn
+function createModel(inputShape) {
     const model = tf.sequential();
     
-    const timesteps = CONFIG.SEQUENCE_LENGTH;
-    const features = 12;  // Số features mới
-
-    // First Bidirectional LSTM layer
-    model.add(tf.layers.bidirectional({
-        layer: tf.layers.lstm({
-            units: 128,
-            returnSequences: true
-        }),
-        inputShape: [timesteps, features]
+    // Input layer with batch normalization
+    model.add(tf.layers.dense({
+        units: 24,
+        activation: 'relu',
+        inputShape: [inputShape],
+        kernelRegularizer: tf.regularizers.l2({l2: CONFIG.L2_REGULARIZATION})
     }));
-    
-    model.add(tf.layers.layerNormalization());
+    model.add(tf.layers.batchNormalization());
     model.add(tf.layers.dropout(0.3));
     
-    // Second Bidirectional LSTM layer
-    model.add(tf.layers.bidirectional({
-        layer: tf.layers.lstm({
-            units: 64,
-            returnSequences: false
-        })
-    }));
-    
-    model.add(tf.layers.layerNormalization());
-    model.add(tf.layers.dropout(0.2));
-    
-    // Dense layers with skip connections
-    const dense1 = tf.layers.dense({
-        units: 32,
-        activation: 'relu'
-    });
-    model.add(dense1);
-    
-    model.add(tf.layers.dropout(0.1));
-    
-    // Additional dense layer for better feature extraction
+    // Hidden layer with residual connection
     model.add(tf.layers.dense({
-        units: 16,
-        activation: 'relu'
+        units: 12,
+        activation: 'relu',
+        kernelRegularizer: tf.regularizers.l2({l2: CONFIG.L2_REGULARIZATION})
     }));
+    model.add(tf.layers.batchNormalization());
+    model.add(tf.layers.dropout(0.2));
     
     // Output layer
     model.add(tf.layers.dense({
         units: 1,
-        activation: 'sigmoid'
+        activation: 'sigmoid',
+        kernelRegularizer: tf.regularizers.l2({l2: CONFIG.L2_REGULARIZATION})
     }));
-
-    // Training configuration
-    const initialLearningRate = CONFIG.LEARNING_RATE;
-    let currentLearningRate = initialLearningRate;
-    const decayRate = 0.95;
-    const minLearningRate = 0.00001;
     
-    let bestValLoss = Infinity;
-    let patienceCount = 0;
-    const maxPatience = CONFIG.PATIENCE;
-    let bestModelWeights = null;
-
-    // Khởi tạo optimizer
-    let optimizer = tf.train.adamax(currentLearningRate);
+    const optimizer = tf.train.adam(CONFIG.LEARNING_RATE);
     
     model.compile({
         optimizer: optimizer,
         loss: 'binaryCrossentropy',
         metrics: ['accuracy']
     });
-
-    // Prepare validation data
-    const numValidation = Math.floor(data.inputs.shape[0] * CONFIG.VALIDATION_SPLIT);
-    const numTrain = data.inputs.shape[0] - numValidation;
     
-    const trainInputs = data.inputs.slice([0, 0, 0], [numTrain, -1, -1]);
-    const trainOutputs = data.outputs.slice([0], [numTrain]);
-    const valInputs = data.inputs.slice([numTrain, 0, 0], [-1, -1, -1]);
-    const valOutputs = data.outputs.slice([numTrain], [-1]);
-
-    // Training history
-    const history = {
-        loss: [],
-        acc: [],
-        val_loss: [],
-        val_acc: [],
-        lr: []
-    };
-
-    // Training loop
-    for (let epoch = 0; epoch < CONFIG.EPOCHS; epoch++) {
-        console.log(`\nEpoch ${epoch + 1}/${CONFIG.EPOCHS}`);
-        console.log('==================================');
-        
-        // Training step with progress callback
-        const trainResult = await model.fit(trainInputs, trainOutputs, {
-            batchSize: CONFIG.BATCH_SIZE,
-            shuffle: true,
-            epochs: 1,
-            verbose: 1, // Thay đổi từ 0 thành 1 để hiển thị progress bar
-            callbacks: {
-                onBatchEnd: async (batch, logs) => {
-                    await tf.nextFrame(); // Cho phép UI cập nhật
-                }
-            }
-        });
-
-        // Validation step
-        const valResult = await model.evaluate(valInputs, valOutputs, {
-            batchSize: CONFIG.BATCH_SIZE,
-            verbose: 0
-        });
-
-        // Convert tensor values to numbers
-        const trainLoss = Number(trainResult.history.loss[0]);
-        const trainAcc = Number(trainResult.history.acc[0]);
-        const valLoss = Number(valResult[0].dataSync()[0]);
-        const valAcc = Number(valResult[1].dataSync()[0]);
-
-        // Update history
-        history.loss.push(trainLoss);
-        history.acc.push(trainAcc);
-        history.val_loss.push(valLoss);
-        history.val_acc.push(valAcc);
-        history.lr.push(currentLearningRate);
-
-        // Log progress với format dễ đọc
-        console.log('\nKết quả:');
-        console.log('----------------------------------');
-        console.log(`Loss:      ${trainLoss.toFixed(4)} (train) | ${valLoss.toFixed(4)} (val)`);
-        console.log(`Accuracy:  ${(trainAcc * 100).toFixed(2)}% (train) | ${(valAcc * 100).toFixed(2)}% (val)`);
-        console.log(`Learning rate: ${currentLearningRate.toFixed(6)}`);
-
-        // Check for improvement
-        if (valLoss < bestValLoss) {
-            console.log('\n✓ Cải thiện! Lưu trọng số mới');
-            bestValLoss = valLoss;
-            patienceCount = 0;
-            bestModelWeights = model.getWeights().map(w => w.clone());
-        } else {
-            patienceCount++;
-            
-            // Learning rate decay
-            if (patienceCount % 5 === 0 && currentLearningRate > minLearningRate) {
-                currentLearningRate *= decayRate;
-                // Tạo optimizer mới với learning rate mới
-                optimizer = tf.train.adamax(currentLearningRate);
-                model.compile({
-                    optimizer: optimizer,
-                    loss: 'binaryCrossentropy',
-                    metrics: ['accuracy']
-                });
-                console.log(`\n→ Giảm learning rate xuống ${currentLearningRate.toFixed(6)}`);
-            }
-            
-            // Early stopping
-            if (patienceCount >= maxPatience) {
-                console.log(`\n! Dừng sớm tại epoch ${epoch + 1} do không cải thiện`);
-                break;
-            }
-        }
-
-        // Clean up tensors
-        valResult[0].dispose();
-        valResult[1].dispose();
-    }
-
-    // Restore best model weights
-    if (bestModelWeights !== null) {
-        model.setWeights(bestModelWeights);
-        console.log('\nRestored best model weights\n');
-    }
-
-    // Update metrics
-    const metrics = {
-        model_info: {
-            name: "TaiXiu_Predictor_BiLSTM",
-            version: "3.0.2",
-            created_at: new Date().toISOString(),
-            framework: "tensorflow.js",
-            framework_version: tf.version.tfjs
-        },
-        architecture: {
-            type: "Bidirectional_LSTM",
-            input_shape: [timesteps, features],
-            layers: [
-                {
-                    type: "Bidirectional_LSTM",
-                    units: 128,
-                    return_sequences: true
-                },
-                {
-                    type: "LayerNormalization"
-                },
-                {
-                    type: "Dropout",
-                    rate: 0.3
-                },
-                {
-                    type: "Bidirectional_LSTM",
-                    units: 64,
-                    return_sequences: false
-                },
-                {
-                    type: "LayerNormalization"
-                },
-                {
-                    type: "Dropout",
-                    rate: 0.2
-                },
-                {
-                    type: "Dense",
-                    units: 32,
-                    activation: "relu"
-                },
-                {
-                    type: "Dropout",
-                    rate: 0.1
-                },
-                {
-                    type: "Dense",
-                    units: 16,
-                    activation: "relu"
-                },
-                {
-                    type: "Dense",
-                    units: 1,
-                    activation: "sigmoid"
-                }
-            ]
-        },
-        training_params: {
-            optimizer: "adamax",
-            initial_learning_rate: initialLearningRate,
-            min_learning_rate: minLearningRate,
-            decay_rate: decayRate,
-            loss_function: "binaryCrossentropy",
-            batch_size: CONFIG.BATCH_SIZE,
-            epochs: CONFIG.EPOCHS,
-            validation_split: CONFIG.VALIDATION_SPLIT,
-            early_stopping: {
-                min_delta: CONFIG.MIN_DELTA,
-                patience: CONFIG.PATIENCE
-            }
-        },
-        features: {
-            sequence_length: CONFIG.SEQUENCE_LENGTH,
-            feature_description: [
-                "Tai/Xiu value (0/1)",
-                "Time of day (normalized 0-1)",
-                "Part of hour (normalized 0-1)",
-                "Is rush hour (0/1)",
-                "Sine time",
-                "Cosine time",
-                "Streak (normalized)",
-                "Tai ratio in window",
-                "Moving average 5",
-                "Moving average 10",
-                "Moving average 20",
-                "Volatility"
-            ]
-        },
-        performance_metrics: {
-            training_samples: numTrain,
-            validation_samples: numValidation,
-            final_accuracy: history.acc[history.acc.length - 1],
-            final_loss: history.loss[history.loss.length - 1],
-            validation_accuracy: history.val_acc[history.val_acc.length - 1],
-            validation_loss: history.val_loss[history.val_loss.length - 1],
-            best_validation_accuracy: Math.max(...history.val_acc),
-            best_validation_loss: bestValLoss,
-            learning_rate_history: history.lr
-        },
-        usage: {
-            input_format: `Sequence of ${CONFIG.SEQUENCE_LENGTH} timesteps with ${features} features each`,
-            output_format: "Probability of Tai (0-1)",
-            threshold: 0.5,
-            interpretation: {
-                above_threshold: "Tai",
-                below_threshold: "Xiu"
-            }
-        }
-    };
-
-    // Lưu metrics vào file
-    const modelDir = './tai_xiu_model';
-    ensureDirectoryExists(modelDir);
-    const metricsPath = path.join(modelDir, 'metrics.json');
-    fs.writeFileSync(metricsPath, JSON.stringify(metrics, null, 2));
-    console.log('Đã lưu metrics vào file metrics.json');
-
-    logWithTime('Đã tạo xong cấu trúc model');
-    logWithTime(`Số lượng mẫu training: ${numTrain}`);
-    logWithTime(`Số lượng mẫu validation: ${numValidation}`);
-
     return model;
+}
+
+class EnsembleModel {
+    constructor(inputShape) {
+        this.models = Array(CONFIG.ENSEMBLE_SIZE).fill(null)
+            .map(() => createModel(inputShape));
+    }
+    
+    async train(data) {
+        logWithTime('Bắt đầu training ensemble models...');
+        
+        const trainTensors = {
+            features: tf.tensor2d(data.train.features),
+            labels: tf.tensor1d(data.train.labels)
+        };
+        
+        const valTensors = {
+            features: tf.tensor2d(data.validation.features),
+            labels: tf.tensor1d(data.validation.labels)
+        };
+        
+        try {
+            const promises = this.models.map((model, index) => {
+                return model.fit(trainTensors.features, trainTensors.labels, {
+                    epochs: CONFIG.EPOCHS,
+                    batchSize: CONFIG.BATCH_SIZE,
+                    validationData: [valTensors.features, valTensors.labels],
+                    verbose: 1,
+                    callbacks: {
+                        onEpochEnd: (epoch, logs) => {
+                            if ((epoch + 1) % 5 === 0) {
+                                logWithTime(`Model ${index + 1} - Epoch ${epoch + 1}: loss = ${logs.loss.toFixed(4)}, acc = ${(logs.acc * 100).toFixed(2)}%, val_acc = ${(logs.val_acc * 100).toFixed(2)}%`);
+                            }
+                        }
+                    }
+                });
+            });
+            
+            await Promise.all(promises);
+            logWithTime('Ensemble training completed successfully');
+            
+            // Evaluate ensemble performance
+            await this.evaluatePerformance(data.validation.features, data.validation.labels);
+            
+        } catch (error) {
+            logWithTime(`Training error: ${error.message}`);
+            throw error;
+            
+        } finally {
+            // Cleanup tensors
+            trainTensors.features.dispose();
+            trainTensors.labels.dispose();
+            valTensors.features.dispose();
+            valTensors.labels.dispose();
+        }
+    }
+    
+    async evaluatePerformance(features, labels) {
+        logWithTime('\n=== ĐÁNH GIÁ HIỆU SUẤT MÔ HÌNH ===');
+        
+        const predictions = [];
+        let correct = 0;
+        let taiCorrect = 0;
+        let xiuCorrect = 0;
+        let taiTotal = 0;
+        let xiuTotal = 0;
+        
+        // Convert features to tensor
+        const featuresTensor = tf.tensor2d(features);
+        
+        try {
+            // Get predictions from all models
+            for(let i = 0; i < features.length; i++) {
+                const sampleFeatures = featuresTensor.slice([i, 0], [1, -1]);
+                const prediction = this.models.map(model => 
+                    model.predict(sampleFeatures).dataSync()[0]
+                ).reduce((a, b) => a + b) / this.models.length;
+                
+                const predictedClass = prediction > 0.5 ? 1 : 0;
+                const actualClass = labels[i];
+                
+                predictions.push({
+                    predicted: predictedClass,
+                    actual: actualClass,
+                    confidence: prediction
+                });
+                
+                if(predictedClass === actualClass) {
+                    correct++;
+                    if(actualClass === 1) taiCorrect++;
+                    else xiuCorrect++;
+                }
+                
+                if(actualClass === 1) taiTotal++;
+                else xiuTotal++;
+                
+                sampleFeatures.dispose();
+            }
+            
+            // Calculate metrics
+            const accuracy = (correct / labels.length) * 100;
+            const taiAccuracy = (taiCorrect / taiTotal) * 100;
+            const xiuAccuracy = (xiuCorrect / (labels.length - taiTotal)) * 100;
+            
+            // Calculate streaks
+            let currentStreak = 0;
+            let longestStreak = 0;
+            
+            for(const pred of predictions) {
+                if(pred.predicted === pred.actual) {
+                    currentStreak++;
+                    longestStreak = Math.max(longestStreak, currentStreak);
+                } else {
+                    currentStreak = 0;
+                }
+            }
+            
+            // Log results
+            logWithTime(`Tổng số mẫu: ${labels.length}`);
+            logWithTime(`Độ chính xác tổng thể: ${accuracy.toFixed(2)}%`);
+            logWithTime(`Độ chính xác Tài: ${taiAccuracy.toFixed(2)}% (${taiCorrect}/${taiTotal})`);
+            logWithTime(`Độ chính xác Xỉu: ${xiuAccuracy.toFixed(2)}% (${xiuCorrect}/${(labels.length - taiTotal)})`);
+            logWithTime(`Chuỗi dự đoán đúng dài nhất: ${longestStreak}`);
+            
+            // Calculate high confidence predictions
+            const highConfPreds = predictions.filter(p => 
+                Math.abs(p.confidence - 0.5) > 0.3
+            );
+            const highConfCorrect = highConfPreds.filter(p => 
+                p.predicted === p.actual
+            ).length;
+            
+            if(highConfPreds.length > 0) {
+                const highConfAcc = (highConfCorrect / highConfPreds.length) * 100;
+                logWithTime(`Độ chính xác với độ tin cậy cao (>80%): ${highConfAcc.toFixed(2)}% (${highConfCorrect}/${highConfPreds.length})`);
+            }
+            
+            // Save detailed results
+            const results = {
+                metrics: {
+                    total_samples: labels.length,
+                    overall_accuracy: accuracy,
+                    tai_accuracy: taiAccuracy,
+                    xiu_accuracy: xiuAccuracy,
+                    longest_streak: longestStreak,
+                    high_confidence_accuracy: highConfPreds.length > 0 ? 
+                        (highConfCorrect / highConfPreds.length) * 100 : null
+                },
+                predictions: predictions
+            };
+            
+            fs.writeFileSync(
+                'model_performance.json',
+                JSON.stringify(results, null, 2)
+            );
+            
+            logWithTime('Chi tiết kết quả đã được lưu vào file model_performance.json');
+            
+        } finally {
+            featuresTensor.dispose();
+        }
+    }
+    
+    predict(features) {
+        const inputTensor = tf.tensor2d([features]);
+        const predictions = this.models.map(model => 
+            model.predict(inputTensor).dataSync()[0]
+        );
+        inputTensor.dispose();
+        return predictions.reduce((a, b) => a + b) / predictions.length;
+    }
+    
+    async save(directory) {
+        for(let i = 0; i < this.models.length; i++) {
+            await this.models[i].save(`file://${directory}/model_${i + 1}`);
+        }
+    }
 }
 
 async function main() {
     try {
         logWithTime('=== BẮT ĐẦU CHƯƠNG TRÌNH ===');
         
-        // Kiểm tra file prediction_log.txt
-        if (!checkFileExists('prediction_log.txt')) {
-            logWithTime('ERROR: Không tìm thấy file prediction_log.txt');
-            logWithTime('Vui lòng đảm bảo file log tồn tại trước khi chạy chương trình');
-            return;
-        }
-
-        // Kiểm tra và tạo file CSV nếu cần
-        if (!checkFileExists('tai_xiu_data.csv')) {
-            logWithTime('Chưa có file CSV, tiến hành chuyển đổi từ log file...');
-            convertLogToCSV();
-        }
-
-        // Chuẩn bị dữ liệu
+        // Prepare data
         logWithTime('Đang chuẩn bị dữ liệu...');
         const data = await prepareData();
-        logWithTime(`Tổng số mẫu: ${data.totalSamples}`);
-
-        // Train model
-        logWithTime('=== BẮT ĐẦU TRAINING ===');
-        const model = await createAndTrainModel(data);
-
-        // Lưu model
-        logWithTime('Đang lưu model...');
-        await model.save('file://./tai_xiu_model');
-        logWithTime('Đã lưu model vào thư mục tai_xiu_model');
-        logWithTime('=== HOÀN THÀNH ===');
+        logWithTime(`Input shape: [${data.inputShape}]`);
+        
+        // Create and train ensemble
+        const ensemble = new EnsembleModel(data.inputShape[0]);
+        await ensemble.train(data);
+        
+        // Save models
+        const modelDir = './tai_xiu_model';
+        if (!fs.existsSync(modelDir)) {
+            fs.mkdirSync(modelDir);
+        }
+        await ensemble.save(modelDir);
+        
+        // Save metadata
+        const metadata = {
+            version: "4.0.2",
+            type: "ensemble",
+            models: CONFIG.ENSEMBLE_SIZE,
+            features: {
+                count: data.inputShape[0],
+                description: [
+                    "Overall Tai ratio",
+                    "Current streak",
+                    "Max streak",
+                    "Time of day",
+                    "Part of hour",
+                    "Sin time",
+                    "Cos time",
+                    "Pattern alternation",
+                    "Momentum",
+                    "Volatility",
+                    "Short-term ratio",
+                    "Medium-term ratio"
+                ]
+            },
+            config: CONFIG
+        };
+        
+        fs.writeFileSync(
+            path.join(modelDir, 'metadata.json'),
+            JSON.stringify(metadata, null, 2)
+        );
+        
+        logWithTime('=== TRAINING COMPLETED ===');
+        
     } catch (error) {
         logWithTime(`ERROR: ${error.message}`);
         console.error(error);
     }
 }
 
-// Chạy chương trình
-logWithTime('Khởi động chương trình...');
+// Run
 main().catch(err => {
     logWithTime(`FATAL ERROR: ${err.message}`);
     console.error(err);
+    process.exit(1);
 }); 

@@ -1,0 +1,36 @@
+{
+  "version": "4.0.2",
+  "type": "ensemble",
+  "models": 3,
+  "features": {
+    "count": 12,
+    "description": [
+      "Overall Tai ratio",
+      "Current streak",
+      "Max streak",
+      "Time of day",
+      "Part of hour",
+      "Sin time",
+      "Cos time",
+      "Pattern alternation",
+      "Momentum",
+      "Volatility",
+      "Short-term ratio",
+      "Medium-term ratio"
+    ]
+  },
+  "config": {
+    "SEQUENCE_LENGTH": 5,
+    "LOOKBACK_WINDOW": 15,
+    "BATCH_SIZE": 32,
+    "EPOCHS": 30,
+    "LEARNING_RATE": 0.001,
+    "VALIDATION_SPLIT": 0.2,
+    "ENSEMBLE_SIZE": 3,
+    "L2_REGULARIZATION": 0.005,
+    "CLASS_WEIGHT": {
+      "0": 1,
+      "1": 1
+    }
+  }
+}

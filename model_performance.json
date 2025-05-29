@@ -1,0 +1,7572 @@
+{
+  "metrics": {
+    "total_samples": 1512,
+    "overall_accuracy": 93.84920634920636,
+    "tai_accuracy": 92.75956284153006,
+    "xiu_accuracy": 94.87179487179486,
+    "longest_streak": 71,
+    "high_confidence_accuracy": 99.51768488745981
+  },
+  "predictions": [
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0016646412550471723
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9377903739611307
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.28227806588013965
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.24835710227489471
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9912628730138143
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9837915897369385
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.979909340540568
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.005711054351801674
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9967083136240641
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01680610841140151
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9805863897005717
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02732404073079427
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03311278546849886
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009597698226571083
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.21565916140874228
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.574515144030253
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9873614509900411
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01252959823856751
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.7086408734321594
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9268906712532043
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001105562938998143
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03426343644969165
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03208177195241054
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9849389592806498
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9924228390057882
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.002984036330720604
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0327040854220589
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.023668595279256504
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012593906372785568
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.20460276554028192
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.017884970953067143
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03563980897888541
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007565848529338837
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0017833102416868012
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9945214589436849
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.018075624558453757
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9929815332094828
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0012925142461123567
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2685800592104594
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.983477771282196
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6870816151301066
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03324813426782688
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.022033906580569845
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.08293521031737328
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.004481712123379111
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9437182943026224
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.06307096655170123
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6581727663675944
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9678781827290853
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2505266070365906
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02126561578673621
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9526125192642212
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7190797527631124
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.3464268247286479
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.951133151849111
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9833491047223409
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00023820729984436184
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.661151130994161
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025272944010794163
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2411359598239263
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.28617366154988605
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0011674007788921397
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7151156862576803
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9973981777826945
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.024684860681494076
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6362508535385132
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6319112181663513
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6831368009249369
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9844016234079996
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6954193115234375
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.1795175572236379
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014105646250148615
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9265334010124207
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.045335808768868446
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.249311293164889
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.027377915258208912
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0025483936575862267
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6594721078872681
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9923619230588278
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.016626062182088692
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.06727702915668488
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.020728756052752335
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9886422554651896
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6810005903244019
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.018987123427602153
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6855032642682394
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008683480943242708
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.002636588799456755
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9657691518465678
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.07315598769734304
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9569429755210876
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.30982520679632825
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02252099694063266
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9924194614092509
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9971851905186971
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001453278256425013
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2775103698174159
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001818906011370321
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9948302507400513
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.686519722143809
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9996788700421652
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.030719003834140796
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0013359221338760108
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6883578499158224
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9875312844912211
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.994391401608785
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0016405941569246352
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2578207651774089
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014700530019278327
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.21195565164089203
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.019435249734669924
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007206228096038103
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9635308384895325
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.027670021789769333
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025457637927805383
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.053714868457367025
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9798742334047953
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.010837613604962826
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9889640410741171
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.004713819003275906
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00466778843353192
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9724650581677755
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0013182407225637387
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007078305934555829
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006575495470315218
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9954398075739542
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9767389496167501
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03478086033525566
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.21274908383687338
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.09393355684975783
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6136886278788248
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.7103477517763773
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7191800475120544
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.019354218306640785
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.022664579150538582
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9967628320058187
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.029993869674702484
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9970017075538635
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9786426226298014
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2653345614671707
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.991028348604838
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6598445971806844
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9545662999153137
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.3101656138896942
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9849551916122437
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9841221570968628
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9804839690526327
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011019994815190634
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9975545803705851
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009869995216528574
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2747192333141963
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9910175204277039
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.04573085950687528
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008104980768014988
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9959683219591776
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001469263496498267
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.98760586977005
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9627687533696493
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025173227380340297
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9811367591222128
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6709685921669006
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9904597997665405
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9922782977422079
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.029585964216191012
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009499459682653347
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.958744744459788
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9996253053347269
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9572516282399496
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9803251028060913
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9902224739392599
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8030041654904684
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9985676407814026
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0012973161550083507
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6601392229398092
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9885763724644979
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.25301742057005566
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9971372882525126
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6807729800542196
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01766714236388604
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014543896075338125
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9083559711774191
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.015299486772467693
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9512198567390442
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9958675106366476
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9814255634943644
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6513248085975647
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0319295988107721
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9497905174891154
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.002553511527366936
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9848777850468954
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9873151381810507
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9868827064832052
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6594391465187073
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0643290684868892
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0020157652519022426
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9857264359792074
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2090166062116623
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9995851516723633
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.005148349795490503
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.989023745059967
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.000929049487846593
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9995835224787394
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008610841042051712
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006173902734493216
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.23235523204008737
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.000607229875943934
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.996625284353892
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9378039439519247
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9867028594017029
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.978361189365387
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9946232438087463
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8608977595965067
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001362345996312797
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0017565586798203487
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.023409446390966576
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0009872244748597343
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.3258901039759318
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9972714384396871
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.06378133967518806
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001779092107123385
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001353305686886112
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.010369346321870884
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03720865398645401
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.004431926024456819
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6039316852887472
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.20057113965352377
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9470413327217102
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.005801036798705657
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011596307158470154
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9849282701810201
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.21138488998015723
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2775705208381017
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.26793448626995087
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.996916651725769
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9899551073710123
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9782610336939493
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.026661583843330543
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9911332527796427
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009085822540024916
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.022996467538177967
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9212661385536194
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.017387202319999535
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.958551267782847
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008267355617135763
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.09784083937605222
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001385578963284691
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9959652225176493
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0011417458590585738
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02787216719298158
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0014677545016941924
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.99649578332901
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9660682678222656
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014244149904698133
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9991193215052286
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.016895166753480833
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012763938478504619
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.016027249706288178
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0011430745750355225
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8696500658988953
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008047477963070074
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9475944638252258
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.3112301578124364
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9375375707944235
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.015003322623670101
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9564958810806274
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8568820556004842
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001270306568282346
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025315582829837997
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9454667369524637
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9828631083170573
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9988832871119181
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007741234381683171
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00030993945377607207
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.015978625354667503
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011999361294632157
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0015404061317288627
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6416119535764059
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.21965635319550833
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.992307444413503
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6451177000999451
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9822948773701986
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.988978902498881
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01894636036013253
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2868612806002299
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009717388389011225
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9868526260058085
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.08101853883514802
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03039087277526657
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00897028623148799
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9978350599606832
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9934966564178467
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01595120457932353
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0007721277458282808
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8384414911270142
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9895860354105631
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2793666223684947
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006333843804895878
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9928148786226908
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0009857834472010534
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001510970905655995
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9752587278683981
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.04126129982372125
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.26942846179008484
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.023425847602387268
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6099313696225485
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9400449792544047
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9730080366134644
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007071780816962321
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.25370076795419055
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9857868750890096
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.21474911769231161
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9536866545677185
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0106662946442763
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001656776914993922
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9845875898996989
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012583888601511717
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9593571424484253
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03400855635603269
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011261986568570137
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8847452998161316
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.24930281937122345
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9968471924463908
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.029026815434917808
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014054699956128994
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03458001154164473
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.663393517335256
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.026708149040738743
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9826603134473165
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9992345968882242
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6616353591283163
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9915239016215006
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011114843810598055
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0582949910312891
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.28585074841976166
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.09425574354827404
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6384853720664978
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.013582807965576649
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9802407026290894
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.21410725514094034
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.024943012821798522
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.028500371767828863
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9992780486742655
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012073180521838367
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9849147796630859
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8715360562006632
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011028990149497986
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8843652606010437
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.7119948665301005
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.25519544382890064
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9932785431543986
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00241748090290154
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.21852878232796988
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.015838084587206442
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.983488917350769
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.029783773507612448
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.027410175030430157
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007010291136490802
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2220066487789154
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012278038077056408
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0009555014354797701
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006901593723644813
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0070109730974460644
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.027008877756694954
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0003488132279017009
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.003002462675794959
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.018843017828961212
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.18220727642377219
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2924298445383708
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6848117709159851
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9828971028327942
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9961327910423279
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.018780263761679333
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.7401174704233805
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9924279451370239
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9987761974334717
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9963431358337402
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9502211411794027
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.23204020162423453
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0045668027984599275
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.23063027610381445
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00997189812672635
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.20868125557899475
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.029431762484212715
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.980454663435618
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01201881510981669
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.06721655496706565
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9647950132687887
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8945489525794983
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9893417159716288
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0011210094089619815
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0011055600480176508
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0806728230478863
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9519262711207072
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.010844229254871607
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.31499970455964404
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9965311884880066
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9936072627703348
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.628967305024465
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.054782675889631115
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006091564195230603
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9944116870562235
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008672901118795076
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9887686769167582
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0010169084028651316
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.914341668287913
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02312399446964264
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0008448997784095506
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.018974409128228825
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006425780865053336
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9465844035148621
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.015822292926410835
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025754696689546108
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.027706379381318886
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9851661523183187
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9720120628674825
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6906370520591736
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9932695031166077
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0029507418281961386
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9973222613334656
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9840141336123148
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011902618066718182
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.015207756659947336
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0009380558622069657
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9974385499954224
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.022147476362685364
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007686697334672014
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7175913453102112
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9856878916422526
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0015160270365110289
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0038725086099778614
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6395267049471537
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2856242507696152
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9181936581929525
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9920013546943665
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009167920798063278
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0015831318645117183
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9884745279947916
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014316938041398922
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.922874371210734
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6906482776006063
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9799597064654032
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03149156644940376
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6914955377578735
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2278930346171061
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011536337823296586
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.030541772954165936
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.07974553511788447
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012958029129852852
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6571073333422343
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.19651021560033163
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.021191907037670415
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9961675604184469
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.22378303607304892
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6512754559516907
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001895303901922792
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01490262639708817
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009941179926196734
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9232691129048666
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9948681990305582
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0037888515604815134
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.021143317222595215
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0008575506896401445
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.019943091785535216
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00966479784498612
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9871652921040853
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9321280916531881
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009923989729334911
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6505051255226135
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01150146460471054
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.024591845460236073
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0009450168387653927
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.021458457844952743
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9553675850232443
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007318410750788947
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6943689187367758
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9983139236768087
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0012548277154564857
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0014174538276468713
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9952488740285238
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.005421969263503949
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9717384974161783
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9863439798355103
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9697453379631042
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.016645658761262894
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02372388153647383
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9971383213996887
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9984753727912903
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.002953087261024242
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02399986268331607
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0013953334225031238
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025330286473035812
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9868573347727457
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.916811982790629
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9962336818377177
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.938837468624115
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9523929754892985
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.027925457417344052
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9958097338676453
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.986045777797699
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9506077766418457
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01379580128317078
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011987447971478105
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6279050707817078
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01435184160557886
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6500370899836222
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.032866012925903
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9280538161595663
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0010506813608420391
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9876264135042826
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9969469507535299
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0003378411541537692
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.660178025563558
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009859695099294186
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.052517691627144814
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9820891420046488
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.05384675351281961
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9860091010729471
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03205269807949662
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.961654007434845
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0011221293825656176
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.022665324931343395
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014048262344052395
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9971753160158793
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01226741448044777
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9960952599843343
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007957160084818801
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9838608304659525
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.19992356995741525
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9487085938453674
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007009779879202445
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9936567544937134
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9662102262179056
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2653065125147502
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9802698095639547
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03555517954130968
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9499532381693522
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008725336287170649
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.013648396357893944
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9532389442125956
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.004065740465496977
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9429240425427755
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6443958282470703
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9426150321960449
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9504614869753519
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2252051681280136
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9866079886754354
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9428123434384664
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.019436262780800462
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0002811943316676964
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0009350459828662375
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011377147786940137
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9427284200986227
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006363213527947664
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02175807215583821
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.032152317852402724
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.019691196891168754
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9474247097969055
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.99039359887441
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03006290008003513
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9919604659080505
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0009204148470113674
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9121012687683105
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02061370915422837
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01955055616660199
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.969908595085144
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02554040898879369
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006698511075228453
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9616590738296509
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012326132195691267
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0002766781011208271
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9979751706123352
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02472444068795691
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.003945765126748786
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.18124199906984964
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012762194499373436
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012230388509730497
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8796424468358358
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9399874409039816
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007383766118437052
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.982398251692454
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0013228175424349804
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03868763521313667
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9865309000015259
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9717626174290975
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8358266154925028
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.010303218344536921
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.23463840782642365
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.010514988719175259
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001545242693585654
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9946710467338562
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03711887627529601
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.21607799331347147
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9912426074345907
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9875253240267435
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006893170221398274
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.22824745376904806
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9971319635709127
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0015942798151324193
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0014568626259764035
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00881177520689865
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9972569545110067
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.18259957432746887
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9810237685839335
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.028872631955891848
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9448563059171041
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9561503926912943
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.016878027197284002
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9544952909151713
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.022009206159661215
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0027406535809859633
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9969549973805746
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6480254133542379
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9878662625948588
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02898927521891892
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0014655569490666192
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.022823692818443913
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011515865568071604
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9868653615315756
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9462564587593079
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.016641329663495224
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9891611337661743
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6716676354408264
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9815956950187683
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9813217918078104
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9780410130818685
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9990843534469604
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6555308898289999
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01582782296463847
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9282184441884359
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6665568550427755
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9582708676656088
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007651463073367874
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9560963908831278
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8520130117734274
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.07201472918192546
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.005415002116933465
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7302503188451132
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007714108331128955
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.28174516061941784
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01562788539255659
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6331770420074463
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02374937810236588
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6438329617182413
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01316242820272843
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6338653167088827
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9932048916816711
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9959414998690287
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9976831277211508
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0012681231601163745
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9968284567197164
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9811535875002543
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9349451065063477
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6717563072840372
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02208308526314795
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.956626296043396
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.931266725063324
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02874667476862669
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.028253576330219705
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.997341533501943
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.24516428510348
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.19722350438435873
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0312014720402658
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00910005473997444
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0013229895266704261
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9824544787406921
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9862718979517618
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9684911370277405
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012976367957890034
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9936152696609497
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9943309624989828
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0042153699323534966
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.010383273164431253
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.004989134380593896
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.026540789132316906
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0010712463796759646
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.022094010996321838
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.05761041181782881
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0027005470086199543
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.010773919833203157
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9808950225512186
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2744814604520798
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.997268279393514
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.019513636633443337
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.987124522527059
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9965639710426331
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008079702793717539
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02974031283520162
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6923166712125143
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.023498746372448902
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9989469250043234
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0381546999172618
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.017064407079791028
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012962613410005966
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.891841987768809
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.010370456147938967
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9963500102361044
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.929029663403829
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009628395394732555
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006903247597316901
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6999102036158243
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9900560975074768
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0015425957390107214
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03458483649107317
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.919594963391622
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9941162467002869
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0007399336124459902
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011598522309213877
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9872931838035583
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.010040707730998596
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009699282546838125
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0109637676893423
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9666971961657206
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.015262642409652472
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01055391524763157
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9868243535359701
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9803082545598348
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6857117215792338
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0010592556597354512
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9978020191192627
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9847113887468973
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9886622627576193
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9959259827931722
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6427390774091085
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9877379735310873
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9848124980926514
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.015163470602904757
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2778554707765579
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0021747370871404805
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6768200596173605
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0015357209679981072
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025310185194636386
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9908086260159811
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9609325528144836
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7063018282254537
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9595038493474325
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9883007009824117
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9810536901156107
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007446007026980321
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009073830025348192
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.027426188501218956
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9914348721504211
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9474350810050964
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.032232591261466347
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008885313601543507
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.981353243192037
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9843839406967163
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9967902302742004
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9953499833742777
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.07567996655901273
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.033880989688138165
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014715079450979829
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9473159313201904
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9972953995068868
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.955156942208608
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001712351746391505
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.980446457862854
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008298029657453299
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.681482712427775
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9824004173278809
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9813377658526102
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2645704944928487
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.1967201679944992
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9804789821306864
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2429844836393992
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.999730130036672
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0006275104581921672
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.25105439126491547
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9543279409408569
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9970508615175883
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.002318349685689706
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.016679497668519616
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6510744293530782
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9986773530642191
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.27757587532202405
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02720623038476333
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.23991015056769052
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9979419708251953
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.026342760073021054
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9824586709340414
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6367832620938619
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9974244634310404
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9816409548123678
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9915958444277445
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9980440934499105
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2873036911090215
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.24088421960671744
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0011089325222807627
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.055997755378484726
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0010423438313106697
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9716232021649679
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9590198000272115
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9932822187741598
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0014075444390376408
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0343210082501173
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007910169195383787
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6805665294329325
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0009404253990699848
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9982937375704447
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.20957746108373007
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0036132341095556817
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.19792419175306955
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.032007087914583586
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9751361807187399
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2287423014640808
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9988150000572205
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9486792882283529
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6823211908340454
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9895382523536682
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.030978840465346973
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006273720413446426
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9051028688748678
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9820488293965658
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02594929343710343
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6074026624361674
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01076038476700584
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9857027133305868
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.30312449236710864
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0013105606485623866
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.020067249424755573
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.957414984703064
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02441278100013733
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.05088599771261215
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.862567146619161
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0038846221286803484
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9864397644996643
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.196123868227005
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9328352411588033
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.004397687858727295
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7194874087969462
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.018439937538156908
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.899289608001709
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9827996095021566
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6579463084538778
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9563544988632202
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.987659772237142
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.20413359006245932
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9986860752105713
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.1892993450164795
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9897199074427286
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.22725921869277954
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.24910872677961984
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007509118566910426
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9989738464355469
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9557391007741293
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.020085316578236718
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.024359951028600335
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014010179322212934
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9304819305737814
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.20865323642889658
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.040369849962492786
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9708479841550192
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.953650156656901
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9863811731338501
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9517415563265482
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.06598694063723087
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.019475469986597698
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6824304858843485
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02062778363081937
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012793990897383386
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.017261706835900743
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6172272364298502
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009919903551538786
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.996007482210795
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02442524229021122
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00898548417414228
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006024951968962948
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2945592353741328
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00757445115596056
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2893328865369161
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.027358387286464374
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0003008489269025934
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03222252087046703
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025035494783272345
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2557302266359329
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01262582621226708
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2659413268168767
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.993767519791921
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.013042546265448133
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.28042828540007275
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9454632798830668
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9989856680234274
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.1909190615018209
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00744182748409609
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9931426048278809
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9524811704953512
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01987988657007615
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014684566607077917
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9975875417391459
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9464616179466248
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03432993280390898
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00023986866775279245
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2730495681365331
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9683483640352885
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.041074154898524284
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009698413778096437
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9628719091415405
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.975960930188497
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9967477321624756
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.999262789885203
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0021599574683932588
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011167298847188553
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.1920048544804255
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9316914478937784
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.25203271210193634
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9808675845464071
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9865143895149231
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9939450224240621
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0015512022267406185
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6462311744689941
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02219015049437682
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0028215689623417952
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001499286057272305
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7252049048741659
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.19113072256247202
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0014616040862165391
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9895829359690348
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.656438410282135
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0061697775187591715
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9858749707539877
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.31741616626580554
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01730598198870818
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006158381545295318
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9960244297981262
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.031276557284096874
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.015876188641414046
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02479630623323222
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011819187241295973
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9842684666315714
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.04451305279508233
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.04216954205185175
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.21235153575738272
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9917384584744772
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00024481902073603123
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9857528607050577
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9752382040023804
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9891936381657919
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.013113444748645028
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.030442733395223815
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6551151474316915
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.32792652646700543
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.699158787727356
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011181950258711973
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009906990802846849
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.013668761278192202
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9776379068692526
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9641900459925333
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9632946252822876
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.018748599104583263
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0018008032348006964
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0010449739056639373
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9967714746793112
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9913331866264343
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0011005985434167087
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.013502594161157807
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.26332710186640423
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6568362712860107
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.037373024659852185
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.22779389222462973
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9781489769617716
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9835709730784098
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.032759283358852066
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.028973625351985294
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00781300124557068
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0018122377417360742
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8719223340352377
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00198481228047361
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9978873531023661
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6656779845555624
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9293341636657715
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009733811253681779
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.013664402533322573
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001438307905724893
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9919135570526123
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2472452074289322
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9500519831975301
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9995916684468588
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9427308241526285
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9808884461720785
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6541063785552979
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0052359682352592545
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9090266823768616
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.016798732802271843
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.034949712455272675
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03638269876440366
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.017719171398008864
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9801672498385111
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9890766541163126
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9443983634312948
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03626012247210989
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8697460889816284
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6547970771789551
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02319182319721828
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9881033301353455
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9988691608111063
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.015569980877141157
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.06841047604878743
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0049604148759196205
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6987799803415934
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.050776499013106026
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6642177502314249
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03163724082211653
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014991783071309328
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0013482272042892873
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03077432792633772
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9922061959902445
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9917784333229065
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2700501283009847
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02823011080423991
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9823957681655884
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9563387036323547
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008951694704592228
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9863038063049316
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.256942555308342
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9832741419474283
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9697583913803101
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9910430312156677
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014864830610652765
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.023842882947064936
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9978861808776855
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6875966389973959
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9940364956855774
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009308219266434511
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.05405900130669276
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.999839723110199
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0002951492351712659
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9854808251063029
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.016790031780449983
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00016816875480193025
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9952569802602133
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9823924501736959
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01547583076171577
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9976279338200887
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011830186937004328
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.27195266385873157
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9965905944506327
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025676888568947714
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9638105034828186
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6465419928232828
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.28339776893456775
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9803292751312256
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9967107176780701
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6506810386975607
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.987006405989329
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9880741635958353
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001171724279023086
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.23148511350154877
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.956466555595398
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.004708251044879337
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0197436553814138
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6699099143346151
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6581037441889445
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0754252386589845
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6403189301490784
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9990662535031637
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.013346869653711716
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9759061535199484
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9974721868832906
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.27462823192278546
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0008279446434850494
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9758558670679728
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6668818990389506
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9454047679901123
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.020761781993011635
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9872196912765503
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9746226867039999
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9995445609092712
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.04859590344130993
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.26226415236790973
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6324522296587626
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0290341479703784
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0016203520256870736
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011909456302722296
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0015287741164987285
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0014890852035023272
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6805941859881083
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0012598535977303982
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025098685796062153
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2090994268655777
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.997526486714681
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0128710683202371
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9973317384719849
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.018353445921093225
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02846371343669792
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011228743746566275
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9951869448026022
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9844580888748169
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9921645124753317
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9934761921564738
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9780404766400655
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8588895201683044
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9926998217900594
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6224305033683777
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9902867873509725
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.020208565227221698
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9977457324663798
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.06928106055905421
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03289970631400744
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012969659641385078
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9865618149439493
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9493939081827799
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6458657582600912
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001518338336609304
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02040699355226631
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.981596847375234
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9968910018603007
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9976835250854492
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9911820689837137
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9919363657633463
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.19871202111244202
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.938775380452474
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0009979141565660636
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02511990039298932
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00023303795508885136
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.987622082233429
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03119006163130204
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.018875038484111428
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.19350800414880118
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.029150019710262615
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.022266644674042862
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9573493599891663
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9884064992268881
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6686651309331259
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025709770464648802
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9884820183118185
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9977783759435018
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7013757228851318
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6878785689671835
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0010343974184555311
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008189770393073559
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6679972012837728
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9970852931340536
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6834475000699362
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03200682563086351
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001514352683443576
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9789275924364725
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006577766818130233
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9850152333577474
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.991581916809082
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9848288098971049
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9713006019592285
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2667210251092911
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9731202522913615
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.024013785645365715
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0016520590288564563
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.029206162163366873
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2749135245879491
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0013917769926289718
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014351427089422941
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.026249915982286137
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01848121437554558
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8808651765187582
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6657489339510599
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6601360440254211
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.020150645209165912
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02536859060637653
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0008381399869297942
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011181906796991825
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0015420560957863927
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.987352212270101
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9894497394561768
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011137168699254593
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01342517789453268
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01477251477384319
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9783364534378052
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2163243144750595
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.07689924010386069
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.028118710887307923
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6590619285901388
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.022903805909057457
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9354441165924072
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.21267942090829214
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9603599905967712
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9946471850077311
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6826480031013489
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9514082868893942
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9929655989011129
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0015645292199527223
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6518931190172831
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.34120731552441913
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9557517965634664
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014182873691121737
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6485212842623392
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0068522372748702765
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02362842733661334
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9840602080027262
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9935609102249146
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0015383904489378135
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014525257497249791
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.1834312528371811
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6684292952219645
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9795772631963094
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0003400392282249716
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.945805827776591
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.27790917952855426
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03168284893035889
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.004582354430264483
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0012540035822894424
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.016320534128074844
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6586145361264547
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9964950482050577
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9475900133450826
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0002535123736985649
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.006205305767556031
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.018358032684773207
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011487818012634913
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.952234168847402
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.27041848997275036
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9912973443667094
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9987866481145223
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.020471868105232716
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9774491985638937
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9991392890612284
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.3018347422281901
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9954282641410828
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9594230055809021
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.032298074482241645
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2613532692193985
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0021766489171568537
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6583966016769409
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2694082707166672
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2706274886926015
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.023767763748764992
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.07435570564121008
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0023540115798823535
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2954687823851903
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0016518361032164346
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6504436135292053
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014121218584477901
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9690752625465393
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9288904070854187
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6576147278149923
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8114436070124308
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.003195143583676933
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.22159293790658316
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6622548500696818
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.003707225861338278
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01546337672819694
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9904935359954834
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014406107676525911
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009014178096549585
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9586419463157654
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.7021217147509257
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6332752704620361
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.052819500056405864
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2751801460981369
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9732431372006735
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6448715130488077
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.010753856739029288
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.7027691006660461
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001505357853602618
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.982043981552124
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.25948090851306915
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009100379422307014
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9941761493682861
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.22428320348262787
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.04033377238859733
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014578150119632483
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9915465911229452
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6600667834281921
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03442696877755225
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9873813390731812
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9983895023663839
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011799818215270838
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9961640238761902
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9994118412335714
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9969992240269979
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9995861450831095
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.026528254617005587
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9988773266474406
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7054273088773092
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6081996560096741
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0020751199141765633
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.005935356059732537
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6372507413228353
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02331000907967488
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6300077239672343
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011590127522746721
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9970953464508057
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6732671062151591
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01417585245023171
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.09451736913373072
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2303317983945211
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9976986845334371
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008575536155452331
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.1300705373287201
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9876588185628256
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.005288439337164164
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.27223000923792523
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001487695340377589
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001336088840616867
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014521965757012367
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9535067876180013
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9903487165768942
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9996793270111084
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9910998741785685
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9502491553624471
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9888199965159098
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0012946444330736995
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0009892235199610393
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.019701218775783975
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.998257557551066
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9957378307978312
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.07023957961549361
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011199207976460457
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7436284373203913
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6262520750363668
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.24395296971003214
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.00048123655627326417
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03375005815178156
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.015437209823479256
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.018619828779871266
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9307488004366556
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014105775393545628
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.010132195428013802
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001988880200466762
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025900500516096752
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03064675093628466
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9765231808026632
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0014808440658574302
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.967306911945343
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9930734435717264
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02240158338099718
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.021330799131343763
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.020314059181449313
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009402556344866753
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0057785422541201115
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012752492756893238
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.1854160726070404
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9963810046513876
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9369599024454752
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.020990067937721808
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9802236159642538
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001865794804568092
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2136636103192965
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6310262282689413
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.002135009039193392
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9967688918113708
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.24124481280644736
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9987228115399679
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9791840116182963
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9995990594228109
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.027637061662971973
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.705406665802002
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007717790004486839
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.23542868594328561
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9815685153007507
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.06786584295332432
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9918529788653055
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9945563276608785
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6634604533513387
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.997349739074707
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03481251296276847
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0014215445747443785
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2607883810997009
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6949545741081238
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9530554413795471
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9832911491394043
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0073664216324687
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9854224522908529
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9893418153127035
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.998917023340861
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0010187604542200763
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9878478646278381
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.05752993964900573
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011404947106105586
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03855800877014796
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6613945364952087
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9856181343396505
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01684757632513841
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9908244013786316
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.04215526829163233
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.018556331982836127
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9831451972325643
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9677112102508545
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001343774745085587
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9850485722223917
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9924641847610474
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03787350499381622
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9973069628079733
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.024406400121127565
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01059250192095836
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0221876905610164
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03573476647337278
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9864809513092041
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008944243037452301
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6520162224769592
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7558039029439291
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.013493301657338938
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9654979308446249
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0013970680302008986
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.028294452310850222
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.27448779344558716
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9433830777804056
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.014471360094224414
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0009746248251758516
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0011284910336447258
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9995418985684713
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9981202681859335
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9869985183080038
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9880047043164571
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9997203151384989
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9721794923146566
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.009462905853676299
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03455400699749589
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9987136522928873
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.997226337591807
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.06767437389741342
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.010975773291041454
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9764449199040731
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9957899848620096
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.04418792622163892
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.8753890593846639
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9870888193448385
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.7138503591219584
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9089865883191427
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9698090751965841
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9990325172742208
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9806070923805237
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.28863559663295746
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6828104058901469
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9859905242919922
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9929209550221761
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9973733822504679
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.996625284353892
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9997787872950236
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9900763233502706
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9958622654279073
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.07909786763290565
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.995093822479248
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9903228282928467
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.30562126139799756
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9712822437286377
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001256716864493986
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9989715615908304
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.001593718344035248
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6872829794883728
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.007785633982469638
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6631380120913187
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.653918445110321
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9867273966471354
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9973848064740499
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012327290760974089
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02723741407195727
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9957269032796224
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012304019182920456
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9906610449155172
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9805420438448588
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6270956993103027
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9820072253545126
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9597803751627604
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0023943316815954554
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9751631021499634
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9917983611424764
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9863460659980774
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.3214654475450516
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.040396258855859436
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9965519706408182
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01940337472478859
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.008047534463306269
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02717199098939697
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2301823099454244
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0013309225905686617
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9912567138671875
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9283292293548584
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9391364057858785
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02803297674593826
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9974567095438639
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9453263878822327
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.01111246959771961
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9478256503740946
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9933789571126302
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9970890879631042
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.797538161277771
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.016260755248367786
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6624144911766052
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6675369739532471
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0016745508716364081
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9833376208941141
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0008523436651254693
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02170495642349124
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.012013694232640168
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9974525173505148
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.025039593495118122
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9986600875854492
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.03532245863849918
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6928006211916605
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0034507134502443173
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02280211200316747
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.2283475250005722
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9933916131655375
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.011904936904708544
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.051704114923874535
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.30062831938266754
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9862561821937561
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.015310763148590922
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.021217558067291975
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9989369511604309
+    },
+    {
+      "predicted": 1,
+      "actual": 0,
+      "confidence": 0.6638014912605286
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9605625867843628
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6289093693097433
+    },
+    {
+      "predicted": 0,
+      "actual": 1,
+      "confidence": 0.2625918487707774
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9818044106165568
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.027838157101844747
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9418154756228129
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9329143762588501
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.02608787113179763
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6709964275360107
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9891284505526224
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0015013599962306519
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.9791203538576762
+    },
+    {
+      "predicted": 0,
+      "actual": 0,
+      "confidence": 0.0198978705642124
+    },
+    {
+      "predicted": 1,
+      "actual": 1,
+      "confidence": 0.6391410827636719
+    }
+  ]
+}

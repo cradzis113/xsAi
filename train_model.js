@@ -3,6 +3,10 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const path = require('path');
 
+// Đường dẫn
+const DATA_FILE = path.join(__dirname, 'data', 'tai_xiu_data.csv');
+const MODEL_OUTPUT_DIR = path.join(__dirname, 'tai_xiu_model');
+
 function logWithTime(message) {
     const timestamp = new Date().toISOString();
     console.log(`[${timestamp}] ${message}`);
@@ -95,7 +99,7 @@ async function prepareData() {
     // Read data
     const rawData = [];
     await new Promise((resolve) => {
-        fs.createReadStream('tai_xiu_data.csv')
+        fs.createReadStream(DATA_FILE)
             .pipe(csv())
             .on('data', (row) => {
                 rawData.push({
@@ -206,7 +210,7 @@ function createModel(inputShape) {
         loss: 'binaryCrossentropy',
         metrics: ['accuracy']
     });
-    
+
     return model;
 }
 
@@ -214,6 +218,7 @@ class EnsembleModel {
     constructor(inputShape) {
         this.models = Array(CONFIG.ENSEMBLE_SIZE).fill(null)
             .map(() => createModel(inputShape));
+        this.lastEvaluation = null;
     }
     
     async train(data) {
@@ -233,17 +238,17 @@ class EnsembleModel {
             const promises = this.models.map((model, index) => {
                 return model.fit(trainTensors.features, trainTensors.labels, {
                     epochs: CONFIG.EPOCHS,
-                    batchSize: CONFIG.BATCH_SIZE,
+            batchSize: CONFIG.BATCH_SIZE,
                     validationData: [valTensors.features, valTensors.labels],
                     verbose: 1,
-                    callbacks: {
+            callbacks: {
                         onEpochEnd: (epoch, logs) => {
                             if ((epoch + 1) % 5 === 0) {
                                 logWithTime(`Model ${index + 1} - Epoch ${epoch + 1}: loss = ${logs.loss.toFixed(4)}, acc = ${(logs.acc * 100).toFixed(2)}%, val_acc = ${(logs.val_acc * 100).toFixed(2)}%`);
                             }
-                        }
-                    }
-                });
+                }
+            }
+        });
             });
             
             await Promise.all(promises);
@@ -325,6 +330,26 @@ class EnsembleModel {
                 }
             }
             
+            // Save evaluation results
+            this.lastEvaluation = {
+                metrics: {
+                    total_samples: labels.length,
+                    overall_accuracy: accuracy,
+                    tai_accuracy: taiAccuracy,
+                    xiu_accuracy: xiuAccuracy,
+                    longest_streak: longestStreak,
+                    high_confidence_accuracy: predictions.filter(p => 
+                        Math.abs(p.confidence - 0.5) > 0.3
+                    ).length > 0 ? 
+                        (predictions.filter(p => 
+                            p.predicted === p.actual
+                        ).length / predictions.filter(p => 
+                            Math.abs(p.confidence - 0.5) > 0.3
+                        ).length) * 100 : null
+                },
+                predictions: predictions.slice(0, 10)
+            };
+            
             // Log results
             logWithTime(`Tổng số mẫu: ${labels.length}`);
             logWithTime(`Độ chính xác tổng thể: ${accuracy.toFixed(2)}%`);
@@ -344,27 +369,6 @@ class EnsembleModel {
                 const highConfAcc = (highConfCorrect / highConfPreds.length) * 100;
                 logWithTime(`Độ chính xác với độ tin cậy cao (>80%): ${highConfAcc.toFixed(2)}% (${highConfCorrect}/${highConfPreds.length})`);
             }
-            
-            // Save detailed results
-            const results = {
-                metrics: {
-                    total_samples: labels.length,
-                    overall_accuracy: accuracy,
-                    tai_accuracy: taiAccuracy,
-                    xiu_accuracy: xiuAccuracy,
-                    longest_streak: longestStreak,
-                    high_confidence_accuracy: highConfPreds.length > 0 ? 
-                        (highConfCorrect / highConfPreds.length) * 100 : null
-                },
-                predictions: predictions
-            };
-            
-            fs.writeFileSync(
-                'model_performance.json',
-                JSON.stringify(results, null, 2)
-            );
-            
-            logWithTime('Chi tiết kết quả đã được lưu vào file model_performance.json');
             
         } finally {
             featuresTensor.dispose();
@@ -389,25 +393,21 @@ class EnsembleModel {
 
 async function main() {
     try {
-        logWithTime('=== BẮT ĐẦU CHƯƠNG TRÌNH ===');
-        
-        // Prepare data
-        logWithTime('Đang chuẩn bị dữ liệu...');
+        logWithTime('Starting model training...');
         const data = await prepareData();
-        logWithTime(`Input shape: [${data.inputShape}]`);
         
-        // Create and train ensemble
+        // Create output directory if it doesn't exist
+        if (!fs.existsSync(MODEL_OUTPUT_DIR)) {
+            fs.mkdirSync(MODEL_OUTPUT_DIR, { recursive: true });
+        }
+        
         const ensemble = new EnsembleModel(data.inputShape[0]);
         await ensemble.train(data);
+
+        // Save models and metadata
+        await ensemble.save(MODEL_OUTPUT_DIR);
         
-        // Save models
-        const modelDir = './tai_xiu_model';
-        if (!fs.existsSync(modelDir)) {
-            fs.mkdirSync(modelDir);
-        }
-        await ensemble.save(modelDir);
-        
-        // Save metadata
+        // Create metadata
         const metadata = {
             version: "4.0.2",
             type: "ensemble",
@@ -417,7 +417,7 @@ async function main() {
                 description: [
                     "Overall Tai ratio",
                     "Current streak",
-                    "Max streak",
+                    "Max streak", 
                     "Time of day",
                     "Part of hour",
                     "Sin time",
@@ -429,19 +429,19 @@ async function main() {
                     "Medium-term ratio"
                 ]
             },
-            config: CONFIG
+            config: CONFIG,
+            performance: ensemble.lastEvaluation || null
         };
-        
+
         fs.writeFileSync(
-            path.join(modelDir, 'metadata.json'),
+            path.join(MODEL_OUTPUT_DIR, 'metadata.json'),
             JSON.stringify(metadata, null, 2)
         );
         
-        logWithTime('=== TRAINING COMPLETED ===');
-        
+        logWithTime('Training completed successfully!');
     } catch (error) {
-        logWithTime(`ERROR: ${error.message}`);
-        console.error(error);
+        logWithTime('Error during training: ' + error.message);
+        throw error;
     }
 }
 

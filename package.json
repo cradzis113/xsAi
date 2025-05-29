@@ -7,6 +7,11 @@
     "start": "nodemon index.js",
     "train": "node train_model.js"
   },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.json"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -14,6 +19,8 @@
   },
   "dependencies": {
     "@tensorflow/tfjs-node": "^4.22.0",
-    "csv-parser": "^3.2.0"
+    "csv-parser": "^3.2.0",
+    "mongoose": "^8.15.1",
+    "puppeteer-core": "^24.9.0"
   }
 }

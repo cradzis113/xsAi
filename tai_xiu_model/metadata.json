@@ -32,5 +32,67 @@
       "0": 1,
       "1": 1
     }
+  },
+  "performance": {
+    "metrics": {
+      "total_samples": 1512,
+      "overall_accuracy": 94.17989417989418,
+      "tai_accuracy": 93.68998628257887,
+      "xiu_accuracy": 94.6360153256705,
+      "longest_streak": 100,
+      "high_confidence_accuracy": 112.30283911671923
+    },
+    "predictions": [
+      {
+        "predicted": 1,
+        "actual": 1,
+        "confidence": 0.9464281996091207
+      },
+      {
+        "predicted": 0,
+        "actual": 0,
+        "confidence": 0.017658666241914034
+      },
+      {
+        "predicted": 0,
+        "actual": 0,
+        "confidence": 0.005971944401001868
+      },
+      {
+        "predicted": 0,
+        "actual": 0,
+        "confidence": 0.40273764729499817
+      },
+      {
+        "predicted": 1,
+        "actual": 1,
+        "confidence": 0.9973370035489401
+      },
+      {
+        "predicted": 1,
+        "actual": 1,
+        "confidence": 0.9484391609827677
+      },
+      {
+        "predicted": 1,
+        "actual": 1,
+        "confidence": 0.9349124630292257
+      },
+      {
+        "predicted": 0,
+        "actual": 0,
+        "confidence": 0.0022278125785912075
+      },
+      {
+        "predicted": 0,
+        "actual": 0,
+        "confidence": 0.003441838159536322
+      },
+      {
+        "predicted": 1,
+        "actual": 1,
+        "confidence": 0.9625591437021891
+      }
+    ]
   }
 }
